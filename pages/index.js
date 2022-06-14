@@ -190,6 +190,13 @@ export default function Home() {
             <Image src="/twitter.svg" alt="twitter" width={20} height={20} />
           </span>
         </a>
+
+        <a href="/ComfortResume.pdf" target="_blank" rel="noopener noreferrer">
+          <span className={styles.logo}>
+            <Image src="/file.svg" alt="resume" width={20} height={20} />
+          </span>
+          <p> - View Resume</p>
+        </a>
       </footer>
     </div>
   );
