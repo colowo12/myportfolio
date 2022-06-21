@@ -24,7 +24,7 @@ export default function AboutMe() {
           world of software engineering and it has been nothing short of
           exciting ever since. Solving real world problems with innovative and
           disruptive solutions is my passion. When I am not coding, you can find
-          me eating, running, or playing games.
+          me eating, running, or playing board games.
         </div>
       </div>
     </div>
