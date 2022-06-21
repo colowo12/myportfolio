@@ -37,8 +37,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Intro />
-        <div className={styles.smalldivider}></div>
+        <div className={styles.divider}></div>
         <TechSwiper />
+        <div className={styles.divider}></div>
         <AboutMe />
         <div className={styles.divider}></div>
         <Projects />
