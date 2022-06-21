@@ -87,7 +87,7 @@ div .titleItems {
     width: 100%;
     height: 100%;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-    background-image: linear-gradient(270deg, #f9f9f9, white);
+    background-image: linear-gradient(270deg, rgba(249, 249, 249, 1), rgba(255, 255, 255, 0));
     position: absolute;
     top: 0;
     right: 0;
