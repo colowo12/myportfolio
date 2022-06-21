@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
+import TechSwiper from "../components/TechSwiper";
 import styles from "../styles/Home.module.css";
 
 const initialFormData = {
@@ -36,12 +37,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Intro />
-        <div className={styles.divider}></div>
+        <div className={styles.smalldivider}></div>
+        <TechSwiper />
         <AboutMe />
         <div className={styles.divider}></div>
         <Projects />
         <div className={styles.divider}></div>
         <ContactMe updateValue={updateValue} sendEmail={sendEmail} />
+        <div className={styles.divider}></div>
       </main>
       <Footer />
     </div>

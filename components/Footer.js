@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Footer.module.css";
 
 export default function Footer() {
   return (
@@ -36,7 +36,7 @@ export default function Footer() {
         <span className={styles.logo}>
           <Image src="/file.svg" alt="resume" width={20} height={20} />
         </span>
-        <p> - View Resume</p>
+        <p> &rarr; Resume</p>
       </a>
     </footer>
   );

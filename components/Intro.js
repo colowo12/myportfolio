@@ -1,7 +1,7 @@
 import Typed from "react-typed";
 import Lottie from "lottie-react";
 import girl from "../public/57285-girl-waiting.json";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Intro.module.css";
 
 export default function Intro() {
   return (

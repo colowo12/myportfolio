@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Projects.module.css";
 
 const Product = ({ name, description, link, src }) => {
   return (
@@ -28,25 +28,28 @@ const Product = ({ name, description, link, src }) => {
 
 export default function Projects() {
   return (
-    <div className={styles.grid}>
-      <Product
-        name="Tech Flip"
-        description="Mobile gaming application created using React-Native"
-        link={"https://github.com/Tech-Flip/techflip"}
-        src="/GameView.png"
-      />
-      <Product
-        name="Book Shopper"
-        description="Mock e-commerce app built using the MERN stack"
-        link={"https://github.com/2011-team-chatime/graceshopper"}
-        src="/shopper.png"
-      />
-      <Product
-        name="Plutus"
-        description="Financial management app built integrating Plaid API"
-        link={"https://github.com/2011-team-phantom/phantom"}
-        src="/plutus.png"
-      />
+    <div>
+      <h1 className={styles.title}>Projects</h1>
+      <div className={styles.grid}>
+        <Product
+          name="Tech Flip"
+          description="Mobile gaming application created using React-Native"
+          link={"https://github.com/Tech-Flip/techflip"}
+          src="/GameView.png"
+        />
+        <Product
+          name="Book Shopper"
+          description="Mock e-commerce app built using the MERN stack"
+          link={"https://github.com/2011-team-chatime/graceshopper"}
+          src="/shopper.png"
+        />
+        <Product
+          name="Plutus"
+          description="Financial management app built integrating Plaid API"
+          link={"https://github.com/2011-team-phantom/phantom"}
+          src="/plutus.png"
+        />
+      </div>
     </div>
   );
 }

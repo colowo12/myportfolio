@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../styles/ContactMe.module.css";
 
 export default function ContactMe({ updateValue, sendEmail }) {
   return (

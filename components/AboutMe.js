@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/AboutMe.module.css";
 
 export default function AboutMe() {
   return (
@@ -23,9 +23,8 @@ export default function AboutMe() {
           was able to complete the Fullstack Academy bootcamp. This propelled me
           into the world of software engineering and it has been nothing short
           of exciting ever since. Solving real world problems with innovative
-          and disruptive solutions is my passion. I specifically build modern
-          interactive websites and user friendly mobile applications. When I am
-          not coding, you can find me eating, running, or playing games.
+          and disruptive solutions is my passion. When I am not coding, you can
+          find me eating, running, or playing games.
         </div>
       </div>
     </div>
