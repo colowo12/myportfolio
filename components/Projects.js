@@ -11,7 +11,7 @@ const Product = ({ name, description, link, src }) => {
       </div>
       <div className={styles.pimg}>
         <a href={link} target="_blank" rel="noreferrer">
-          <h2>{name} &rarr;</h2>
+          <h1>{name} &rarr;</h1>
           <p>{description}</p>
         </a>
         <Image
@@ -29,7 +29,7 @@ const Product = ({ name, description, link, src }) => {
 export default function Projects() {
   return (
     <div>
-      <h1 className={styles.title}>Projects</h1>
+      <p className={styles.title}>Projects</p>
       <div className={styles.grid}>
         <Product
           name="Tech Flip"

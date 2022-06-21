@@ -22,11 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 2px 18px -4px #022b3a;
 }
 
 .desc {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 24px;
     width: 600px;
     text-align: center;
     padding-bottom: 10px;
@@ -34,6 +35,8 @@
 
 .container {
     width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 18px -4px rgba(0,0,0,0.75);
 }
 
 /* div .swiper-button-prev, .swiper-button-next {

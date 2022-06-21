@@ -76,8 +76,8 @@ export default function TechSwiper() {
   return (
     <div className={styles.swipers}>
       <p className={styles.desc}>
-        Specialized in building modern, interactive, and user friendly websites
-        and mobile applications utilizing various tools such as
+        Specialized in building modern, interactive, and user friendly web and
+        mobile applications utilizing ...
       </p>
       <div className={styles.container}>
         <Swiper {...params}>

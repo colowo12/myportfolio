@@ -20,11 +20,11 @@ export default function AboutMe() {
         <div className={styles.about}>About Me</div>
         <div className={styles.text}>
           My career started in mechanical engineering but during the pandemic, I
-          was able to complete the Fullstack Academy bootcamp. This propelled me
-          into the world of software engineering and it has been nothing short
-          of exciting ever since. Solving real world problems with innovative
-          and disruptive solutions is my passion. When I am not coding, you can
-          find me eating, running, or playing games.
+          completed the Fullstack Academy bootcamp. This propelled me into the
+          world of software engineering and it has been nothing short of
+          exciting ever since. Solving real world problems with innovative and
+          disruptive solutions is my passion. When I am not coding, you can find
+          me eating, running, or playing games.
         </div>
       </div>
     </div>
