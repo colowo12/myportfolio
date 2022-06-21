@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/AboutMe.module.css";
+import styles from "./AboutMe.module.css";
 
 export default function AboutMe() {
   return (
