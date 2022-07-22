@@ -3,31 +3,55 @@
     display: flex;
     height: 100vh;
     background-image: url("/abstracthex.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
     
 div .intro {
     margin-top: 60px;
-    font-size: 30px;
+    font-size: 4rem;
     font-weight: 300;
     color:#1f7a8c;
 }
 
 
 .name {
-    font-size: 80px;
+    font-size: 6rem;
     color:#022b3a;
 }
     
 .leftTitle {
-    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 3
 }
     
 .rightTitle {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-image: linear-gradient(270deg, rgba(249, 249, 249, 1), rgba(255, 255, 255, 0));
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     flex: 2;
     position: relative;
+}
+
+.image {
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    position: absolute;
+    top: -200px;
+    left: -300px;
+    aspect-ratio: 1;
+}
+
+.image svg {
+    z-index: 2 !important;
 }
     
 .leftWrapper {
@@ -39,6 +63,7 @@ div .intro {
     
 div .titleItems {
     height: 50px;
+    width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: 50px;
@@ -46,50 +71,151 @@ div .titleItems {
     
 .itemWrapper {
     height: 100%;
-    animation: move 15s ease-in-out infinite alternate;
+    width: 100%;
+    animation: move 20s ease-in-out infinite;
 }
     
 .item {
-    height: 50px;
-    font-size: 36px;
+    height: 75px;
+    font-size: 3rem;
     font-weight: bold;
     color: #1f7a8c;
     display: flex;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .item {
+        font-size: 2.25rem;
+    }
+
+    .image svg {
+        width: 200% !important;
+    }
+
+    div .intro {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    div .rightTitle {
+        width: 100%;
+        height: 75%; 
+        top: 150px;
+        left: 200px;
+        position: absolute !important;
+        background-image: none;
+        clip-path: none;
+    }
+
+    .image svg {
+        width: 100% !important;
+        z-index: -2;
+    }
+
+    .image {
+        align-self: flex-start;
+        justify-self: flex-start;
+        height: 100%;
+        position: absolute;
+        aspect-ratio: 1;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    div .rightTitle {
+        top: 150px;
+        left: 200px;
+        position: absolute !important;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    div .rightTitle {
+        top: 150px;
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .rightTitle {
+        top: 150px;
+        left: 400px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .topSection {
+        height: 75vh;
+    }
+
+    div .intro {
+        font-size: 40px;
+    }
+
+    .item {
+        font-size: 1.5rem;
+    }
+
+    .titleItems {
+        z-index: 2;
+    }
+    .name {
+        font-size: 3rem;
+        width: min-content;
+    }
+
+    .leftWrapper {
+        padding-left: 0px;
+    }
+    
+    .leftTitle {
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    .rightTitle {
+        width: 100%;
+        height: 75%; 
+        top: 150px;
+        right: -500px;
+        position: absolute !important;
+        background-image: none;
+        clip-path: none;
+    }
+
+    .image svg {
+        width: 120% !important;
+        z-index: -2;
+    }
+
+    .image {
+        align-self: center;
+        justify-self: center;
+        height: 100%;
+        position: absolute;
+        aspect-ratio: 1;
+    }
+
 }
     
 @keyframes move {
     25%{
-        transform: translateY(-50px);
+        transform: translateY(-75px);
     }
     50%{
-        transform: translateY(-100px);
-    }
-    75%{
         transform: translateY(-150px);
     }
+    75%{
+        transform: translateY(-225px);
+    }
     100%{
-        transform: translateY(-200px);
+        transform: translateY(-300px);
     }
 }
+
     
-.image {
-    height: 115vh;
-    aspect-ratio: 1.5;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: -300px;
-    overflow: hidden;
-}
-    
-.imageBg {
-    width: 100%;
-    height: 100%;
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-    background-image: linear-gradient(270deg, rgba(249, 249, 249, 1), rgba(255, 255, 255, 0));
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 

@@ -3,7 +3,7 @@
     border: none;
     border-bottom: 1px solid black;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: 20px;
     width: 80%;
     border-radius: 5px;
     padding: 10px;
@@ -12,11 +12,11 @@
 .textarea {
     width: 80%;
     margin: 10px 0px;
-    font-size: 14px;
+    font-size: 20px;
     border-radius: 5px;
     padding: 10px;
 }
-  
+
 .button {
     height: 40px;
     border: none;
@@ -28,6 +28,7 @@
     width: 80%;
     border-radius: 5px;
     margin: 10px 0px;
+    font-size: 20px;
 }
   
   
@@ -53,4 +54,43 @@
     flex-direction: column;
     flex: 3;
     align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+    .contactSection {
+        flex-direction: column;
+    }
+
+    .formTitle {
+        flex: none;
+        font-size: 40px;
+    }
+
+    .form {
+        flex: none;
+        width: 80%;
+    }
+
+    .input {
+        margin: 10px 0px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 12px;
+    }
+      
+    .textarea {
+        width: 100%;
+        margin: 10px 0px;
+        border-radius: 5px;
+        padding: 12px;
+    }
+      
+    .button {
+        padding: 15px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 10px 0px;
+        height: max-content;
+    }
+
 }

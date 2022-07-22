@@ -11,8 +11,8 @@ const Product = ({ name, description, link, src }) => {
       </div>
       <div className={styles.pimg}>
         <a href={link} target="_blank" rel="noreferrer">
-          <h1>{name} &rarr;</h1>
-          <p>{description}</p>
+          <h1 className={styles.pHeading}>{name} &rarr;</h1>
+          <p className={styles.pDesc}>{description}</p>
         </a>
         <Image
           src={src}

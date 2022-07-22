@@ -3,17 +3,17 @@
   height: 60vh;
   display: flex;
   align-items: center;
-  padding-left: 100px;
 }
   
 .rightBio {
   flex: 2;
   font-size: 24px;
   font-weight: 100;
-  text-align: justify;
+  text-align: left;
   color: #bfdbf7;
-  margin-left: 50px;
-  padding: 20px;
+  margin-right: 0 !important;
+  padding: 100px 0 100px 0;
+  width: 100%;
 }
   
 .about {
@@ -27,30 +27,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   height: 100%;
   margin-left: 50px;
 }
   
 .text {
   color: #bfdbf7;;
-  width: 75%;
-}
-
-div.profileBg {
-  background-image: url("/geo.png");
-  border-radius: 30px;
-  position: absolute;
-  top: 130px;
-  right: 170px;
-  width: 300px;
-  height: 300px;
-  align-self: center;
-  justify-self: center;
+  width: 100%;
+  font-size: 20px;
 }
   
 .profile {
-  position: relative;
   overflow: hidden;
   align-self: center;
   justify-self: center;
@@ -58,12 +45,9 @@ div.profileBg {
   
 .pic {
   border-radius: 30px;
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
 }
 
-@media only screen and (max-width:1200px) {
+@media screen and (max-width:800px) {
   .midSection{
     flex-direction: column;
     text-align: center;
@@ -72,14 +56,13 @@ div.profileBg {
 
   .leftBio {
     width: 100%;
+    margin-left: 0;
   }
 
   .profile {
-    height: 30vh;
-  }
-
-  .profileBg {
-    display: none;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 16px;
   }
 
   .rightBio{
@@ -88,13 +71,18 @@ div.profileBg {
 
   .pic {
     border-radius: 20px;
-    object-fit: scale-down;
     width: 200px;
     height: 200px;
   }
 
   .text {
-    text-overflow: ellipsis;
-    max-height: 300px;
+    text-overflow:clip;
+    width: 100%;
+    font-size: 20px;
   }
+
+  .about {
+    text-align: center;
+  }
+
 }

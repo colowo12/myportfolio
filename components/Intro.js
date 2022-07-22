@@ -14,17 +14,20 @@ export default function Intro() {
           <h1 className={styles.name}>Comfort Olowo</h1>
           <div className={styles.titleItems}>
             <div className={styles.itemWrapper}>
-              <span className={styles.item}>Fullstack Software Developer</span>
-              <span className={styles.item}>Tech & Crypto Enthusiast</span>
-              <span className={styles.item}>Food Lover and Blogger</span>
+              <span className={styles.item}>Software Developer</span>
+              <span className={styles.item}>Crypto Enthusiast</span>
+              <span className={styles.item}>Food Lover/Blogger</span>
               <span className={styles.item}>Open to Work</span>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.rightTitle}>
-        <div className={styles.imageBg}></div>
-        <Lottie animationData={girl} className={styles.image} />
+        <Lottie
+          animationData={girl}
+          className={styles.image}
+          style={{ height: "150%" }}
+        />
       </div>
     </div>
   );

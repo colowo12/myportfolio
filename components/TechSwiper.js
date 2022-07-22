@@ -16,6 +16,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import styles from "../styles/TechSwiper.module.css";
+import useWindowDimensions from "./ResizeWindow";
 
 SwiperCore.use([
   Mousewheel,
@@ -54,12 +55,31 @@ const stacks = [
 ];
 
 export default function TechSwiper() {
+  const { height, width } = useWindowDimensions();
+  const dim = (pix) => {
+    switch (pix) {
+      case pix > 2400:
+        return 6;
+      case pix > 2000:
+        return 5;
+      case pix > 1600:
+        return 4;
+      case pix > 1200:
+        return 3;
+      case pix > 800:
+        return 2;
+      case pix > 500:
+        return 1;
+      default:
+        return 4;
+    }
+  };
   const params = {
     centeredSlides: true,
-    slidesPerView: 7,
+    slidesPerView: dim(width),
     spaceBetween: 10,
     freeMode: true,
-    slidesPerGroup: 7,
+    slidesPerGroup: dim(width),
     loop: true,
     loopFillGroupWithBlank: true,
     mousewheel: true,
